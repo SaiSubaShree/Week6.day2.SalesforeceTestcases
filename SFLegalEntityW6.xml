@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suite">
+<parameter name="url" value="https://login.salesforce.com" />
+<parameter name="username" value="ramkumar.ramaiah@testleaf.com" />
+<parameter name="password" value="Password#123" />
+
+  <test thread-count="5" name="Test" verbose="2">
+    <classes>
+      <class name="week6.day2.salesforce.LegalEntities.EditLegalEntity"/>
+      <class name="week6.day2.salesforce.LegalEntities.SortLeaglEntity"/>
+      <class name="week6.day2.salesforce.LegalEntities.Delete"/>
+      <class name="week6.day2.salesforce.LegalEntities.CreateLegalEntity"/>
+      <class name="week6.day2.salesforce.LegalEntities.WithoutMandatoryFeild"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
